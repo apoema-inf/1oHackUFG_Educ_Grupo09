@@ -19,4 +19,13 @@
     <string name="institutional_nav">Institucional</string>
     <string name="header_app">header_app</string>
     <string name="header_user">header_user</string>
+    <string name="cpf_cnpj">cpf/cnpj</string>
+    <string name="password">senha</string>
+    <string name="sign_up">Crie uma conta!</string>
+    <string name="login">entrar</string>
+    <string name="sign_up_title">cadastro</string>
+    <string name="text_redirect">sou:</string>
+    <string name="student">estudante</string>
+    <string name="professional">profissional</string>
+    <string name="company">empresário</string>
 </resources>

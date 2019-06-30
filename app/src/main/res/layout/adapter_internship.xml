@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +22,7 @@
             android:layout_height="86dp"
             android:layout_marginRight="8dp"
             android:layout_marginEnd="8dp"
-            android:src="@drawable/ic_account_circle_black_48dp"/>
+            android:src="@drawable/ic_account_circle_white_48dp"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -40,6 +41,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
+                    android:textColor="@color/primaryTextColor"
                     tools:text="Nome da empresa"/>
                 <TextView
                     android:layout_marginBottom="4dp"
@@ -47,6 +49,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
+                    android:textColor="@color/primaryTextColor"
                     tools:text="Nome vaga"/>
                 <TextView
                     android:layout_marginBottom="4dp"
@@ -54,6 +57,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
+                    android:textColor="@color/primaryTextColor"
                     tools:text="Salário"/>
                 <TextView
                     android:layout_marginBottom="4dp"
@@ -61,6 +65,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
+                    android:textColor="@color/primaryTextColor"
                     tools:text="Distância"/>
             </LinearLayout>
             <RelativeLayout
@@ -76,6 +81,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
+                    android:textColor="@color/primaryTextColor"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentTop="true"

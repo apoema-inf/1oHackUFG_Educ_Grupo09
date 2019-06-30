@@ -3,6 +3,67 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_regular"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="40sp"
+        android:text="@string/sign_up_title"
+        android:textAllCaps="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:text="@string/text_redirect"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:id="@+id/student_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primaryTextColor"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:textAllCaps="false"
+        android:textSize="34sp"
+        android:fontFamily="@font/raleway_thin"
+        android:text="@string/student"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/professional_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primaryTextColor"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:textAllCaps="false"
+        android:textSize="34sp"
+        android:fontFamily="@font/raleway_thin"
+        android:text="@string/professional"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/company_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primaryTextColor"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:textAllCaps="false"
+        android:textSize="34sp"
+        android:fontFamily="@font/raleway_thin"
+        android:text="@string/company"
+        android:layout_marginTop="20dp"/>
 
 </LinearLayout>
