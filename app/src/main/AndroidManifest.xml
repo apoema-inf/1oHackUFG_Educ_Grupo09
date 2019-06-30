@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.ufg.group9.pevb">
 
+
+
     <application
         android:name=".PEVBApplication"
         android:allowBackup="true"
@@ -12,7 +14,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".ui.splash.SplashActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +23,34 @@
         </activity>
         <activity
             android:name=".ui.home.HomeActivity"
-            android:theme="@style/Theme.AppCompat" />
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.detail.DetailActivity"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.home.HomeActivity"/>
+        <activity
+            android:name=".ui.job.JobActivity"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.home.HomeActivity"/>
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".ui.register.RedirectActivity"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.login.LoginActivity"/>
+        <activity
+            android:name=".ui.register.company.CompanyActivity"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.register.RedirectActivity"/>
+        <activity
+            android:name=".ui.register.professional.ProfessionalActivity"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.register.RedirectActivity"/>
+        <activity
+            android:name=".ui.register.student.StudentActivity"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.register.RedirectActivity"/>
     </application>
 
 </manifest>

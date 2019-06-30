@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/app_name"/>
+    <group
+        android:id="@+id/user_options"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/profile_nav" />
+        <item
+            android:id="@+id/nav_internship"
+            android:icon="@drawable/ic_explore_black_24dp"
+            android:title="@string/internship_nav" />
+        <item
+            android:id="@+id/nav_institutional"
+            android:icon="@drawable/ic_institutional_black_24dp"
+            android:title="@string/institutional_nav" />
+    </group>
+</menu>
