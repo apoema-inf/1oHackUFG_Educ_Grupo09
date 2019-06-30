@@ -1,6 +1,7 @@
 package br.ufg.group9.pevb.ui.register
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProviders
 import br.ufg.group9.pevb.R
 import br.ufg.group9.pevb.base.BaseActivity
@@ -16,15 +17,18 @@ class RedirectActivity: BaseActivity<RedirectViewModel>() {
         setContentView(R.layout.activity_redirect)
 
         student_from.setOnClickListener {
-            viewModel.setRegisterActivity(this, StudentActivity())
+            Toast.makeText(this, "Student forms...", Toast.LENGTH_LONG).show()
+            //viewModel.setRegisterActivity(this, StudentActivity())
         }
 
         professional_form.setOnClickListener {
-            viewModel.setRegisterActivity(this, ProfessionalActivity())
+            Toast.makeText(this, "Professional forms...", Toast.LENGTH_LONG).show()
+//            viewModel.setRegisterActivity(this, ProfessionalActivity())
         }
 
         company_form.setOnClickListener {
-            viewModel.setRegisterActivity(this, CompanyActivity())
+            Toast.makeText(this, "Company forms...", Toast.LENGTH_LONG).show()
+//            viewModel.setRegisterActivity(this, CompanyActivity())
         }
     }
 

@@ -40,20 +40,20 @@ class InternshipAdapter (private val itemListener: ItemListener<Internship>) :
 
     inner class InternshipViewHolder(noteView: View): RecyclerView.ViewHolder(noteView) {
         private val image = noteView.findViewById<ImageView>(R.id.image_internship)
-        private val company = noteView.findViewById<TextView>(R.id.job_internship)
+        private val company = noteView.findViewById<TextView>(R.id.company_internship)
+        private val job = noteView.findViewById<TextView>(R.id.job_internship)
         private val payment = noteView.findViewById<TextView>(R.id.payment_internship)
         private val distance = noteView.findViewById<TextView>(R.id.distance_internship)
         private val timer = noteView.findViewById<TextView>(R.id.timer_internship)
         private val rate = noteView.findViewById<RatingBar>(R.id.rating_internship)
 
         fun fillData(data: Internship) {
-            Picasso.get()
-                .load("url")
-                .resize(50, 50)
-                .centerCrop()
-                .into(image)
+//            Picasso.get()
+//                .load(data.image)
+//                .into(image)
 
             company.text = data.company
+            job.text = data.job
             payment.text = data.payment
             distance.text = data.distance
             timer.text = data.timer
