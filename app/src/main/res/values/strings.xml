@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PEVB</string>
+    <string name="app_name">vaguei</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -28,4 +28,7 @@
     <string name="student">estudante</string>
     <string name="professional">profissional</string>
     <string name="company">empresário</string>
+    <string name="ensino">Ensino</string>
+    <string name="emprego">Emprego</string>
+    <string name="estagio">Estágio</string>
 </resources>

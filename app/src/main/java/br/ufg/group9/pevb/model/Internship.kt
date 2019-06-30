@@ -5,5 +5,6 @@ data class Internship (
     val job: String,
     val rate: Double,
     val payment: String,
-    val distance: String
+    val distance: String,
+    val timer: String
 )

@@ -9,13 +9,17 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.ViewModelProviders
 import br.ufg.group9.pevb.R
+import br.ufg.group9.pevb.adapter.SectionsPagerAdapter
 import br.ufg.group9.pevb.base.BaseActivity
 import br.ufg.group9.pevb.ui.home.main.MainFragment
 import com.google.android.material.navigation.NavigationView
+import com.google.android.material.tabs.TabLayout
+import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity: BaseActivity<HomeViewModel>() {
 
     private lateinit var mDrawerLayout: DrawerLayout
+    private lateinit var mSectionPagesAdapter : SectionsPagerAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -56,7 +60,20 @@ class HomeActivity: BaseActivity<HomeViewModel>() {
             true
         }
 
-        viewModel.swapListFragment(this, MainFragment(), R.id.container_home)
+        mSectionPagesAdapter = SectionsPagerAdapter(supportFragmentManager)
+        fillPages()
+
+        container_home.adapter = mSectionPagesAdapter
+        tab_detail.setupWithViewPager(container_home)
+        container_home.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tab_detail))
+        tab_detail.addOnTabSelectedListener(TabLayout.ViewPagerOnTabSelectedListener(container_home))
+    }
+
+    private fun fillPages() {
+
+        mSectionPagesAdapter.addPages(MainFragment(), getString(R.string.estagio))
+        mSectionPagesAdapter.addPages(MainFragment(), getString(R.string.ensino))
+        mSectionPagesAdapter.addPages(MainFragment(), getString(R.string.emprego))
     }
 
     //appbar - toolbar button click
